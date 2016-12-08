@@ -52,3 +52,5 @@ http-server
 Project by:
 - Joe Karlsson
 - Tyler Nichols
+- Estefania Morton
+
