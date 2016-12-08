@@ -5,6 +5,7 @@ var text = document.getElementById('txtField');
 var createText = document.createElement('input');
 createText.id = "field";
 createText.setAttribute('type', 'text');
+createText.setAttribute('value', 0);
 text.appendChild(createText);
 
 //buttons 0-9
