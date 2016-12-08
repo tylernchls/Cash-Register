@@ -1,5 +1,11 @@
 var myCalc = calculatorModule();
 
+//text field
+var text = document.getElementById('txtField');
+var createText = document.createElement('input');
+createText.id = "field";
+createText.setAttribute('type', 'text');
+text.appendChild(createText);
 
 //buttons 0-9
 (function(){
@@ -10,7 +16,8 @@ for (var i = 0; i <= 9; i++) {
   createBtn.innerHTML = i;
   createBtn.id = i;
   createBtn.addEventListener('click', function(event){
-    console.log(event.target.innerHTML);
+    var field = document.getElementById('field')
+    field.value = event.target.innerHTML;
   });
   btnBox.appendChild(createBtn);
   }
@@ -19,9 +26,11 @@ for (var i = 0; i <= 9; i++) {
 //00 Button
 var dubZero = document.getElementById('dubZero');
 var createDubZero = document.createElement('button');
+createDubZero.id = "zero";
 createDubZero.innerHTML = "00";
 createDubZero.addEventListener('click', function(event){
-    console.log(event.target.innerHTML);
+  var field = document.getElementById('field')
+  field.value = event.target.innerHTML;
   });
 dubZero.appendChild(createDubZero);
 
@@ -85,7 +94,9 @@ var clear = document.getElementById('clear');
 var createClear = document.createElement('button');
 createClear.innerHTML = "clear";
 createClear.addEventListener('click', function(event){
-    console.log(event.target.innerHTML);
+    var field = document.getElementById('field')
+    field.value = 0;
+
   });
 clear.appendChild(createClear);
 
