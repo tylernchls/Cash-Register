@@ -8,6 +8,7 @@ createText.setAttribute('type', 'text');
 createText.setAttribute('value', 0);
 text.appendChild(createText);
 
+
 //buttons 0-9
 (function(){
 
