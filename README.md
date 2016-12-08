@@ -51,8 +51,6 @@ http-server
 
 Project by:
 - Joe Karlsson
-<<<<<<< HEAD
 - Jay Houn
-=======
 - Estefania Morton
->>>>>>> 5e13cf9872fe53b6e1c2c23890e15a7d11597199
+
