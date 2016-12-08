@@ -51,6 +51,6 @@ http-server
 
 Project by:
 - Joe Karlsson
-- Jay Houn
+- Tyler Nichols
 - Estefania Morton
-
+- Jay Houn
