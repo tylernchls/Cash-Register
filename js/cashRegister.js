@@ -14,6 +14,7 @@ var display = document.getElementById('display');
 //one
 var one = document.getElementById('1');
 one.addEventListener('click', function(event){
+  display.value += event.target.innerHTML;
   if(operator){
     mem1 = myCalc.load(Number(display.value));
     console.log(mem1);
@@ -242,26 +243,29 @@ equals.addEventListener('click', function(event){
   if(add === true){
 
   myCalc.load(Number(mem1));
-  console.log(myCalc.add(Number(mem2)));
-
+  display.value = myCalc.add(Number(mem2));
+  console.log(display.value);
   }
 
   else if(subtract === true) {
 
   myCalc.load(Number(mem1));
-  console.log(myCalc.subtract(Number(mem2)));
+  display.value = myCalc.subtract(Number(mem2));
+  console.log(display.value);
 
   }
 
   else if(multiply === true){
   myCalc.load(Number(mem1));
-  console.log(myCalc.multiply(Number(mem2)));
+  display.value = myCalc.multiply(Number(mem2));
+  console.log(display.value);
 
   }
 
   else if (division === true) {
   myCalc.load(Number(mem1));
-  console.log(myCalc.divide(Number(mem2)));
+  display.value = myCalc.divide(Number(mem2));
+  console.log(display.value);
 
   }
 });
