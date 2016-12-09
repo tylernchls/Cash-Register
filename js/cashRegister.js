@@ -1,104 +1,149 @@
 var myCalc = calculatorModule();
+console.log()
 
+//display
 var display = document.getElementById('display');
 
 
-
+//seven
 var seven = document.getElementById('7');
 seven.addEventListener('click', function(event){
   display.value += event.target.innerHTML;
 });
 
+
+//eight
 var eight = document.getElementById('8');
 eight.addEventListener('click', function(event){
   display.value += event.target.innerHTML;
 });
 
+
+//nine
 var nine = document.getElementById('9');
 nine.addEventListener('click', function(event){
   display.value += event.target.innerHTML;
 });
 
+
+//ten
 var clear = document.getElementById('clear');
 clear.addEventListener('click', function(event){
   display.value += event.target.innerHTML;
 });
 
+
+//four
 var four = document.getElementById('4');
 four.addEventListener('click', function(event){
   display.value += event.target.innerHTML;
 });
 
+
+//five
 var five = document.getElementById('5');
 five.addEventListener('click', function(event){
   display.value += event.target.innerHTML;
 });
 
+
+//six
 var six = document.getElementById('6');
 six.addEventListener('click', function(event){
   display.value += event.target.innerHTML;
 });
 
+
+//x
 var x = document.getElementById('x');
 x.addEventListener('click', function(event){
   console.log(event.target.innerHTML);
 });
 
+
+
+//get balance
 var getBalance = document.getElementById('balance');
 getBalance.addEventListener('click', function(event){
   console.log(event.target.innerHTML);
 });
 
+
+
+//one
 var one = document.getElementById('1');
 one.addEventListener('click', function(event){
   display.value += event.target.innerHTML;
 });
 
+
+
+//two
 var two = document.getElementById('2');
 two.addEventListener('click', function(event){
   display.value += event.target.innerHTML;
 });
 
+
+
+//three
 var three = document.getElementById('3');
 three.addEventListener('click', function(event){
   display.value += event.target.innerHTML;
 });
 
+
+
+//minus
 var minus = document.getElementById('-');
 minus.addEventListener('click', function(event){
   console.log(event.target.innerHTML);
 });
 
+
+//depCash
 var depCash = document.getElementById('deposit');
 depCash.addEventListener('click', function(event){
   console.log(event.target.innerHTML);
 });
 
+
+//zero
 var zero = document.getElementById('0');
 zero.addEventListener('click', function(event){
   display.value += event.target.innerHTML;
 });
 
+
+//dubZero
 var dubZero = document.getElementById('00');
 dubZero.addEventListener('click', function(event){
   display.value += event.target.innerHTML;
 });
 
+
+//decimal
 var decimal = document.getElementById('.');
 decimal.addEventListener('click', function(event){
   console.log(event.target.innerHTML);
 });
 
+
+//addition
 var addition = document.getElementById('+');
 addition.addEventListener('click', function(event){
   console.log(event.target.innerHTML);
 });
 
+
+//withdraw
 var withDraw = document.getElementById('withdraw');
 withdraw.addEventListener('click', function(event){
   console.log(event.target.innerHTML);
 });
 
+
+//equals
 var equals = document.getElementById('=');
 equals.addEventListener('click', function(event){
 
