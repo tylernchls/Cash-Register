@@ -243,8 +243,10 @@ equals.addEventListener('click', function(event){
   if(add === true){
 
   myCalc.load(Number(mem1));
-  display.value = myCalc.add(Number(mem2));
-  console.log(display.value);
+  myCalc.add(Number(mem2));
+  display.value = myCalc.getTotal();
+  console.log(myCalc.saveMemory());
+
   }
 
   else if(subtract === true) {
