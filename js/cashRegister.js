@@ -9,6 +9,7 @@
   var isSubtract = false;
   var isMultiply = false;
   var isDivision = false;
+  var clickedAgain = false;
 
 
   //display
@@ -16,7 +17,11 @@
 
   //update display function
   function updateDisplay (newDisplay){
+    if(clickedAgain !== true) {
     display.value += newDisplay;
+    } else {
+      display.value = newDisplay;
+    }
   }
 
   //adds to memory function
@@ -25,7 +30,7 @@
       memLocation1 = myCalc.load(Number(displayValue));
       console.log(memLocation1);
     }
-    else{
+    else {
       memLocation2 = myCalc.load(Number(displayValue));
       console.log(memLocation2);
     }
@@ -125,6 +130,14 @@
       isOperator = false;
       display.value = '';
       isAdd = true;
+
+      clickedAgain = true;
+      if (clickedAgain) {
+
+      memLocation1 = memLocation1 + memLocation2;
+      display.value = memLocation1;
+      console.log(display.value);
+      }
   });
 
 
@@ -135,6 +148,14 @@
     isOperator = false;
     display.value = '';
     isSubtract = true;
+
+
+    clickedAgain = true;
+    if (clickedAgain) {
+      memLocation1 = memLocation1 - memLocation2;
+      display.value = memLocation1;
+      console.log(display.value);
+      }
   });
 
   //multiply
