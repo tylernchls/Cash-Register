@@ -50,125 +50,66 @@
   //three
   var three = document.getElementById('3');
   three.addEventListener('click', function(event){
-    display.value += event.target.innerHTML;
-    if(isOperator){
-      memLocation1 = myCalc.load(Number(display.value));
-      console.log(memLocation1);
-    }
-    else{
-    memLocation2 = myCalc.load(Number(display.value));
-      console.log(memLocation2);
-    }
+    updateDisplay(event.target.innerHTML);
+    addToMemory(isOperator, display.value);
   });
 
 
   //four
   var four = document.getElementById('4');
   four.addEventListener('click', function(event){
-    display.value += event.target.innerHTML;
-    if(isOperator){
-      memLocation1 = myCalc.load(Number(display.value));
-      console.log(memLocation1);
-    }
-    else{
-    memLocation2 = myCalc.load(Number(display.value));
-      console.log(memLocation2);
-    }
+    updateDisplay(event.target.innerHTML);
+    addToMemory(isOperator, display.value);
   });
 
 
   //five
   var five = document.getElementById('5');
   five.addEventListener('click', function(event){
-    display.value += event.target.innerHTML;
-    if(isOperator){
-      memLocation1 = myCalc.load(Number(display.value));
-      console.log(memLocation1);
-    }
-    else{
-    memLocation2 = myCalc.load(Number(display.value));
-      console.log(memLocation2);
-    }
+    updateDisplay(event.target.innerHTML);
+    addToMemory(isOperator, display.value);
   });
-
 
   //six
   var six = document.getElementById('6');
   six.addEventListener('click', function(event){
-    display.value += event.target.innerHTML;
-    if(isOperator){
-      memLocation1 = myCalc.load(Number(display.value));
-      console.log(memLocation1);
-    }
-    else{
-    memLocation2= myCalc.load(Number(display.value));
-      console.log(memLocation2);
-    }
+    updateDisplay(event.target.innerHTML);
+    addToMemory(isOperator, display.value);
   });
 
   //seven
   var seven = document.getElementById('7');
   seven.addEventListener('click', function(event){
-    display.value += event.target.innerHTML;
-    if(isOperator){
-      memLocation1 = myCalc.load(Number(display.value));
-      console.log(memLocation1);
-    }
-    else{
-    memLocation2 = myCalc.load(Number(display.value));
-      console.log(memLocation2);
-    }
+    updateDisplay(event.target.innerHTML);
+    addToMemory(isOperator, display.value);
   });
-
-
 
   //eight
   var eight = document.getElementById('8');
   eight.addEventListener('click', function(event){
-    display.value += event.target.innerHTML;
-   if(isOperator){
-      memLocation1 = myCalc.load(Number(display.value));
-      console.log(memLocation1);
-    }
-    else{
-    memLocation2 = myCalc.load(Number(display.value));
-      console.log(memLocation2);
-    }
+    updateDisplay(event.target.innerHTML);
+    addToMemory(isOperator, display.value);
   });
-
 
   //nine
   var nine = document.getElementById('9');
   nine.addEventListener('click', function(event){
-    display.value += event.target.innerHTML;
-    if(isOperator){
-      memLocation1 = myCalc.load(Number(display.value));
-      console.log(memLocation1);
-    }
-    else{
-    memLocation2 = myCalc.load(Number(display.value));
-      console.log(memLocation2);
-    }
+    updateDisplay(event.target.innerHTML);
+    addToMemory(isOperator, display.value);
   });
 
   //zero
   var zero = document.getElementById('0');
   zero.addEventListener('click', function(event){
-    display.value += event.target.innerHTML;
-    if(isOperator){
-      memLocation1 = myCalc.load(Number(display.value));
-      console.log(memLocation1);
-    }
-    else{
-    memLocation2 = myCalc.load(Number(display.value));
-      console.log(memLocation2);
-    }
+    updateDisplay(event.target.innerHTML);
+    addToMemory(isOperator, display.value);
   });
 
   //dubZero
   var dubZero = document.getElementById('00');
   dubZero.addEventListener('click', function(event){
-    display.value += event.target.innerHTML;
+    updateDisplay(event.target.innerHTML);
+    addToMemory(isOperator, display.value);
   });
 
   //decimal

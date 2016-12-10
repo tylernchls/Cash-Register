@@ -1,0 +1,27 @@
+{
+  "name": "Cash-Register",
+  "version": "1.0.0",
+  "description": "An exercise related to [closures](https://slides.com/theremix/closures) and [js-calculator](https://github.com/devleague/js-calculator)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylernchls/Cash-Register.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylernchls/Cash-Register/issues"
+  },
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "globals": [
+      "window"
+    ]
+  }
+  "homepage": "https://github.com/tylernchls/Cash-Register#readme"
+}
