@@ -1,12 +1,12 @@
 (function () {
   var myCalc = calculatorModule();
-  var operator = true;
-  var mem1 = 0;
-  var mem2 = 0;
-  var add = false;
-  var subtract = false;
-  var multiply = false;
-  var division = false;
+  var isOperator = true;
+  var memLocation1 = 0;
+  var memLocation2 = 0;
+  var isAdd = false;
+  var isSubtract = false;
+  var isMultiply = false;
+  var isDivision = false;
 
 
   //display
@@ -16,13 +16,13 @@
   var one = document.getElementById('1');
   one.addEventListener('click', function(event){
     display.value += event.target.innerHTML;
-    if(operator){
-      mem1 = myCalc.load(Number(display.value));
-      console.log(mem1);
+    if(isOperator){
+      memLocation1 = myCalc.load(Number(display.value));
+      console.log(memLocation1);
     }
     else{
-    mem2 = myCalc.load(Number(display.value));
-      console.log(mem2);
+    memLocation2 = myCalc.load(Number(display.value));
+      console.log(memLocation2);
     }
   });
 
@@ -31,13 +31,13 @@
   var two = document.getElementById('2');
   two.addEventListener('click', function(event){
     display.value += event.target.innerHTML;
-    if(operator){
-      mem1 = myCalc.load(Number(display.value));
-      console.log(mem1);
+    if(isOperator){
+      memLocation1 = myCalc.load(Number(display.value));
+      console.log(memLocation1);
     }
     else{
-    mem2 = myCalc.load(Number(display.value));
-      console.log(mem2);
+    memLocation2 = myCalc.load(Number(display.value));
+      console.log(memLocation2);
     }
   });
 
@@ -46,13 +46,13 @@
   var three = document.getElementById('3');
   three.addEventListener('click', function(event){
     display.value += event.target.innerHTML;
-    if(operator){
-      mem1 = myCalc.load(Number(display.value));
-      console.log(mem1);
+    if(isOperator){
+      memLocation1 = myCalc.load(Number(display.value));
+      console.log(memLocation1);
     }
     else{
-    mem2 = myCalc.load(Number(display.value));
-      console.log(mem2);
+    memLocation2 = myCalc.load(Number(display.value));
+      console.log(memLocation2);
     }
   });
 
@@ -61,13 +61,13 @@
   var four = document.getElementById('4');
   four.addEventListener('click', function(event){
     display.value += event.target.innerHTML;
-    if(operator){
-      mem1 = myCalc.load(Number(display.value));
-      console.log(mem1);
+    if(isOperator){
+      memLocation1 = myCalc.load(Number(display.value));
+      console.log(memLocation1);
     }
     else{
-    mem2 = myCalc.load(Number(display.value));
-      console.log(mem2);
+    memLocation2 = myCalc.load(Number(display.value));
+      console.log(memLocation2);
     }
   });
 
@@ -76,13 +76,13 @@
   var five = document.getElementById('5');
   five.addEventListener('click', function(event){
     display.value += event.target.innerHTML;
-    if(operator){
-      mem1 = myCalc.load(Number(display.value));
-      console.log(mem1);
+    if(isOperator){
+      memLocation1 = myCalc.load(Number(display.value));
+      console.log(memLocation1);
     }
     else{
-    mem2 = myCalc.load(Number(display.value));
-      console.log(mem2);
+    memLocation2 = myCalc.load(Number(display.value));
+      console.log(memLocation2);
     }
   });
 
@@ -91,13 +91,13 @@
   var six = document.getElementById('6');
   six.addEventListener('click', function(event){
     display.value += event.target.innerHTML;
-    if(operator){
-      mem1 = myCalc.load(Number(display.value));
-      console.log(mem1);
+    if(isOperator){
+      memLocation1 = myCalc.load(Number(display.value));
+      console.log(memLocation1);
     }
     else{
-    mem2 = myCalc.load(Number(display.value));
-      console.log(mem2);
+    memLocation2= myCalc.load(Number(display.value));
+      console.log(memLocation2);
     }
   });
 
@@ -105,13 +105,13 @@
   var seven = document.getElementById('7');
   seven.addEventListener('click', function(event){
     display.value += event.target.innerHTML;
-    if(operator){
-      mem1 = myCalc.load(Number(display.value));
-      console.log(mem1);
+    if(isOperator){
+      memLocation1 = myCalc.load(Number(display.value));
+      console.log(memLocation1);
     }
     else{
-    mem2 = myCalc.load(Number(display.value));
-      console.log(mem2);
+    memLocation2 = myCalc.load(Number(display.value));
+      console.log(memLocation2);
     }
   });
 
@@ -121,13 +121,13 @@
   var eight = document.getElementById('8');
   eight.addEventListener('click', function(event){
     display.value += event.target.innerHTML;
-   if(operator){
-      mem1 = myCalc.load(Number(display.value));
-      console.log(mem1);
+   if(isOperator){
+      memLocation1 = myCalc.load(Number(display.value));
+      console.log(memLocation1);
     }
     else{
-    mem2 = myCalc.load(Number(display.value));
-      console.log(mem2);
+    memLocation2 = myCalc.load(Number(display.value));
+      console.log(memLocation2);
     }
   });
 
@@ -136,13 +136,13 @@
   var nine = document.getElementById('9');
   nine.addEventListener('click', function(event){
     display.value += event.target.innerHTML;
-    if(operator){
-      mem1 = myCalc.load(Number(display.value));
-      console.log(mem1);
+    if(isOperator){
+      memLocation1 = myCalc.load(Number(display.value));
+      console.log(memLocation1);
     }
     else{
-    mem2 = myCalc.load(Number(display.value));
-      console.log(mem2);
+    memLocation2 = myCalc.load(Number(display.value));
+      console.log(memLocation2);
     }
   });
 
@@ -150,13 +150,13 @@
   var zero = document.getElementById('0');
   zero.addEventListener('click', function(event){
     display.value += event.target.innerHTML;
-    if(operator){
-      mem1 = myCalc.load(Number(display.value));
-      console.log(mem1);
+    if(isOperator){
+      memLocation1 = myCalc.load(Number(display.value));
+      console.log(memLocation1);
     }
     else{
-    mem2 = myCalc.load(Number(display.value));
-      console.log(mem2);
+    memLocation2 = myCalc.load(Number(display.value));
+      console.log(memLocation2);
     }
   });
 
@@ -176,9 +176,9 @@
   //addition
   var addition = document.getElementById('+');
   addition.addEventListener('click', function(){
-      operator = false;
+      isOperator = false;
       display.value = '';
-      add = true;
+      isAdd = true;
   });
 
 
@@ -186,27 +186,26 @@
   var minus = document.getElementById('-');
   minus.addEventListener('click', function(event){
     console.log(event.target.innerHTML);
-    operator = false;
+    isOperator = false;
     display.value = '';
-    subtract = true;
+    isSubtract = true;
   });
 
   //multiply
   var x = document.getElementById('x');
   x.addEventListener('click', function(event){
     console.log(event.target.innerHTML);
-     operator = false;
-      display.value = '';
-      multiply = true;
+    isOperator = false;
+    display.value = '';
+    isMultiply = true;
   });
 
   //divide
   var div = document.getElementById('÷');
   div.addEventListener('click', function(event){
-    display.value = "";
-    operator = false;
+    isOperator = false;
     display.value = '';
-    division = true;
+    isDivision = true;
   });
 
 
@@ -241,33 +240,33 @@
   //equals
   var equals = document.getElementById('=');
   equals.addEventListener('click', function(event){
-    if(add === true){
+    if(isAdd === true){
 
-    myCalc.load(Number(mem1));
-    myCalc.add(Number(mem2));
+    myCalc.load(Number(memLocation1));
+    myCalc.add(Number(memLocation2));
     display.value = myCalc.getTotal();
-    console.log(myCalc.saveMemory());
-
-    }
-
-    else if(subtract === true) {
-
-    myCalc.load(Number(mem1));
-    display.value = myCalc.subtract(Number(mem2));
     console.log(display.value);
 
     }
 
-    else if(multiply === true){
-    myCalc.load(Number(mem1));
-    display.value = myCalc.multiply(Number(mem2));
+    else if(isSubtract === true) {
+
+    myCalc.load(Number(memLocation1));
+    display.value = myCalc.subtract(Number(memLocation2));
     console.log(display.value);
 
     }
 
-    else if (division === true) {
-    myCalc.load(Number(mem1));
-    display.value = myCalc.divide(Number(mem2));
+    else if(isMultiply === true){
+    myCalc.load(Number(memLocation1));
+    display.value = myCalc.multiply(Number(memLocation2));
+    console.log(display.value);
+
+    }
+
+    else if (isDivision === true) {
+    myCalc.load(Number(memLocation1));
+    display.value = myCalc.divide(Number(memLocation2));
     console.log(display.value);
 
     }
