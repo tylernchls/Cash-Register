@@ -1,3 +1,5 @@
+
+
 (function () {
   var myCalc = calculatorModule();
   var isOperator = true;
@@ -12,33 +14,36 @@
   //display
   var display = document.getElementById('display');
 
-  //one
-  var one = document.getElementById('1');
-  one.addEventListener('click', function(event){
-    display.value += event.target.innerHTML;
+  //update display function
+  function updateDisplay (newDisplay){
+    display.value += newDisplay;
+  }
+
+  //adds to memory function
+  function addToMemory (isOperator, displayValue){
     if(isOperator){
-      memLocation1 = myCalc.load(Number(display.value));
+      memLocation1 = myCalc.load(Number(displayValue));
       console.log(memLocation1);
     }
     else{
-    memLocation2 = myCalc.load(Number(display.value));
+      memLocation2 = myCalc.load(Number(displayValue));
       console.log(memLocation2);
     }
+  }
+
+  //one
+  var one = document.getElementById('1');
+  one.addEventListener('click', function(event){
+    updateDisplay(event.target.innerHTML);
+    addToMemory(isOperator, display.value);
   });
 
 
   //two
   var two = document.getElementById('2');
   two.addEventListener('click', function(event){
-    display.value += event.target.innerHTML;
-    if(isOperator){
-      memLocation1 = myCalc.load(Number(display.value));
-      console.log(memLocation1);
-    }
-    else{
-    memLocation2 = myCalc.load(Number(display.value));
-      console.log(memLocation2);
-    }
+    updateDisplay(event.target.innerHTML);
+    addToMemory(isOperator, display.value);
   });
 
 
