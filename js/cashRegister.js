@@ -139,11 +139,11 @@
       isAdd = true;
       add += add;
 
-      clickedAgain = true;
+      clickedAgain = false;
 
       memLocation1 = memLocation1 + memLocation2;
       display.value = memLocation1;
-      clickedAgain = false;
+      clickedAgain = true;
       console.log(display.value);
   });
 
