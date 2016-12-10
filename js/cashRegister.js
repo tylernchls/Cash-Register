@@ -247,24 +247,20 @@
     display.value = myCalc.getTotal();
     console.log(display.value);
 
-    }
-
-    else if(isSubtract === true) {
+    } else if(isSubtract === true) {
 
     myCalc.load(Number(memLocation1));
     display.value = myCalc.subtract(Number(memLocation2));
     console.log(display.value);
 
-    }
+    } else if(isMultiply === true){
 
-    else if(isMultiply === true){
     myCalc.load(Number(memLocation1));
     display.value = myCalc.multiply(Number(memLocation2));
     console.log(display.value);
 
-    }
+    } else if (isDivision === true) {
 
-    else if (isDivision === true) {
     myCalc.load(Number(memLocation1));
     display.value = myCalc.divide(Number(memLocation2));
     console.log(display.value);
