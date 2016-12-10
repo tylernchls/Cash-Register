@@ -10,6 +10,8 @@
   var isMultiply = false;
   var isDivision = false;
   var clickedAgain = false;
+  var test = '';
+  var add = 0;
 
 
   //display
@@ -17,10 +19,16 @@
 
   //update display function
   function updateDisplay (newDisplay){
-    if(clickedAgain !== true) {
+    console.log('clickedAgain::', clickedAgain);
+    if(clickedAgain != true) {
     display.value += newDisplay;
+    console.log('memLocation1', display.value);
     } else {
-      display.value = newDisplay;
+      test += newDisplay;
+      console.log('memLocation2', test);
+      display.value = test;
+
+
     }
   }
 
@@ -128,16 +136,15 @@
   var addition = document.getElementById('+');
   addition.addEventListener('click', function(event){
       isOperator = false;
-      display.value = '';
       isAdd = true;
+      add += add;
 
       clickedAgain = true;
-      if (clickedAgain) {
 
       memLocation1 = memLocation1 + memLocation2;
       display.value = memLocation1;
+      clickedAgain = false;
       console.log(display.value);
-      }
   });
 
 
@@ -146,7 +153,6 @@
   minus.addEventListener('click', function(event){
     console.log(event.target.innerHTML);
     isOperator = false;
-    display.value = '';
     isSubtract = true;
 
 
@@ -163,7 +169,6 @@
   x.addEventListener('click', function(event){
     console.log(event.target.innerHTML);
     isOperator = false;
-    display.value = '';
     isMultiply = true;
   });
 
@@ -171,7 +176,6 @@
   var div = document.getElementById('÷');
   div.addEventListener('click', function(event){
     isOperator = false;
-    display.value = '';
     isDivision = true;
   });
 
