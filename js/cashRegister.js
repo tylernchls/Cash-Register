@@ -175,7 +175,7 @@
 
   //addition
   var addition = document.getElementById('+');
-  addition.addEventListener('click', function(){
+  addition.addEventListener('click', function(event){
       isOperator = false;
       display.value = '';
       isAdd = true;
